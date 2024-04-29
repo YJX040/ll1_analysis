@@ -1,0 +1,4 @@
+Non-terminal,$,(,),:,a,b
+S,,S->(T),,,S->a,S->b
+T,,T->ST',,,T->ST',T->ST'
+T',,,T'->ε,T'->:ST',,

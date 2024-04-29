@@ -1,0 +1,25 @@
+digraph AnalysisProcess {
+  rankdir=LR;
+  node [shape=plaintext]
+  graph [fontsize=10 fontname="Verdana"]
+  table [label=<<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="center">stack</td><td align="center">input</td><td align="center">action</td></tr>
+    <tr><td align="center">$)T(</td><td align="center">(a:(b))$</td><td align="center">(T)</td></tr>
+    <tr><td align="center">$)T(</td><td align="center">(a:(b))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)'TS</td><td align="center">a:(b))$</td><td align="center">ST'</td></tr>
+    <tr><td align="center">$)'Ta</td><td align="center">a:(b))$</td><td align="center">a</td></tr>
+    <tr><td align="center">$)'Ta</td><td align="center">a:(b))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)'TS:</td><td align="center">:(b))$</td><td align="center">:ST'</td></tr>
+    <tr><td align="center">$)'TS:</td><td align="center">:(b))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)'T)T(</td><td align="center">(b))$</td><td align="center">(T)</td></tr>
+    <tr><td align="center">$)'T)T(</td><td align="center">(b))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)'T)'TS</td><td align="center">b))$</td><td align="center">ST'</td></tr>
+    <tr><td align="center">$)'T)'Tb</td><td align="center">b))$</td><td align="center">b</td></tr>
+    <tr><td align="center">$)'T)'Tb</td><td align="center">b))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)'T)</td><td align="center">))$</td><td align="center">ε</td></tr>
+    <tr><td align="center">$)'T)</td><td align="center">))$</td><td align="center">match</td></tr>
+    <tr><td align="center">$)</td><td align="center">)$</td><td align="center">ε</td></tr>
+    <tr><td align="center">$)</td><td align="center">)$</td><td align="center">match</td></tr>
+  </table>>];
+"Accept	(a:(b))"
+}

@@ -1,0 +1,10 @@
+digraph PredictiveTable {
+node [shape=box];
+Table [label=<
+<table border="0" cellborder="1" cellspacing="0">
+<tr><td></td><td>$</td><td>a</td><td>b</td></tr>
+<tr><td>A</td><td></td><td>a</td><td>bAA</td></tr>
+<tr><td>B</td><td></td><td>aBB</td><td>b</td></tr>
+<tr><td>S</td><td>ε</td><td>aBS</td><td>bAS</td></tr>
+</table>>];
+}

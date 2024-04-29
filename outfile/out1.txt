@@ -1,0 +1,27 @@
+S -> a
+S -> b
+S -> (T)
+T -> S
+T -> T:S
+
+S -> LR
+S -> L+R
+S -> +R
+L -> aR
+L -> ab
+L -> a
+R -> a
+
+
+A -> Ba
+A -> Aa
+A -> c
+B -> Bb
+B -> Ab
+B -> d
+
+S -> aTaR
+S -> R
+T -> TRa
+T -> b
+R -> T

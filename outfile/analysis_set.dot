@@ -1,0 +1,22 @@
+digraph AnalysisGraph {
+node [shape=box];
+rankdir=LR;
+"S -> (T) SELECT set = { ( }
+S -> a SELECT set = { a }
+S -> b SELECT set = { b }
+T -> ST' SELECT set = { ( a b }
+T' -> :ST' SELECT set = { : }
+T' -> ε SELECT set = { ) }
+""Select set of nonterminal symbols:"
+"S FOLLOW set = { $ ) : }
+T FOLLOW set = { ) }
+T' FOLLOW set = { ) }
+"
+"FOLLOW set of nonterminal symbols:"
+"S FIRST set = { ( a b }
+T FIRST set = { ( a b }
+T' FIRST set = { : ε }
+""FIRST set of nonterminal symbols:"
+"Terminal information:\nNumber of terminals: 6 they are: $ ( ) : a b "
+"nonterminal information:\nNumber of non-terminal symbols: 3 they are: S T T' "
+}

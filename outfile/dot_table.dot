@@ -1,0 +1,10 @@
+digraph PredictiveTable {
+node [shape=box];
+Table [label=<
+<table border="0" cellborder="1" cellspacing="0">
+<tr><td></td><td>$</td><td>(</td><td>)</td><td>:</td><td>a</td><td>b</td></tr>
+<tr><td>S</td><td></td><td>(T)</td><td></td><td></td><td>a</td><td>b</td></tr>
+<tr><td>T</td><td></td><td>ST'</td><td></td><td></td><td>ST'</td><td>ST'</td></tr>
+<tr><td>T'</td><td></td><td></td><td>ε</td><td>:ST'</td><td></td><td></td></tr>
+</table>>];
+}

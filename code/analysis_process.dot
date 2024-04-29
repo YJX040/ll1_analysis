@@ -1,0 +1,14 @@
+digraph AnalysisProcess {
+  rankdir=LR;
+  node [shape=plaintext]
+  graph [fontsize=10 fontname="Verdana"]
+  table [label=<<table border="0" cellborder="1" cellspacing="0">
+    <tr><td align="center">栈</td><td align="center">输入</td><td align="center">动作</td></tr>
+    <tr><td align="center">$S</td><td align="center">dd</td><td align="center">TA</td></tr>
+    <tr><td align="center">$S</td><td align="center">dd</td><td align="center">FB</td></tr>
+    <tr><td align="center">$S</td><td align="center">dd</td><td align="center">d</td></tr>
+    <tr><td align="center">$AB</td><td align="center">d</td><td align="center">Fail</td></tr>
+  </table>>];
+"Error: Production for table[B][d] is empty."
+"Fail"
+}

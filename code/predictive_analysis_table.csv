@@ -1,0 +1,4 @@
+Non-terminal,$,a,b
+A,,A->a,A->bAA
+B,,B->aBB,B->b
+S,S->ε,S->aBS,S->bAS

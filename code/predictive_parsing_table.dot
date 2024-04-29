@@ -1,0 +1,13 @@
+digraph PredictiveParsingTable {
+	S [shape=ellipse];
+	T [shape=ellipse];
+	T' [shape=ellipse];
+	( [shape=box];
+	) [shape=box];
+	: [shape=box];
+	a [shape=box];
+	b [shape=box];
+	$ [shape=box];
+	S -> a [label="a"];
+	S -> b [label="b"];
+}
